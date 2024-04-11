@@ -3,7 +3,7 @@ from params.utils import create_folder
 
 # !!! IMPORTANT
 # Change this to True if you want to manually provide these paths.
-user = True
+user = False
 '''
 1. Data-Input
 

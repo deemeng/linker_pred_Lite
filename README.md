@@ -8,7 +8,6 @@ PUNCH_Linker_light is trained on more than 2000 DFL linker dataset from <a href=
 There is no MSA seqrching needed for the prediction. Therefore, compare to PUNCH_Linker, the prediction may slightly worse but it only cost ~0.1 second for one prediction.
 
 ## 🐣 Getting Started
-Currently, we provide two ways to use this perdictor: Docker or Download source code from this Github.
 ### Pre-requirements
 This predictor requires sequences embedded with [ProtTrans](https://github.com/agemagician/ProtTrans).
 Note, 
@@ -40,21 +39,21 @@ Note,
   docker run -d \
   -it \
   --name [CONTAINER_NAME] \
-  --mount type=bind,source=[PATH_TO_INPUT_FASTA],target=/punch_linker/data/input.fasta \
-  --mount type=bind,source=[PATH_TO_PROTTRANS],target=/punch_linker/data/protTrans \
-  --mount type=bind,source=[PATH_OUTPUT],target=/punch_linker/output \
-  dimeng851/punch_linker:v1
+  --mount type=bind,source=[PATH_TO_INPUT_FASTA],target=/punch_linker_light/data/input.fasta \
+  --mount type=bind,source=[PATH_TO_PROTTRANS],target=/punch_linker_light/data/protTrans \
+  --mount type=bind,source=[PATH_OUTPUT],target=/punch_linker_light/output \
+  dimeng851/punch_linker_light:v1
   ```
   > 
   >An example:
   ```sh
   docker run -d \
   -it \
-  --name punch_linker_con \
-  --mount type=bind,source=/Users/deemeng/Downloads/data/linker/linker.fasta,target=/punch_linker/data/input.fasta \
-  --mount type=bind,source=/Users/deemeng/Downloads/data/linker/protTrans,target=/punch_linker/data/protTrans \
-  --mount type=bind,source=/Users/deemeng/Downloads/data/linker/output,target=/punch_linker/output \
-  dimeng851/punch_linker:v1
+  --name punch_linker_light_con \
+  --mount type=bind,source=/home/dimeng/caid3/test.fasta,target=/punch_linker_light/data/input.fasta \
+  --mount type=bind,source=/home/dimeng/project/domain_linker/data/caid/features/protTrans,target=/punch_linker_light/data/protTrans \
+  --mount type=bind,source=/home/dimeng/caid3/punch_linker_output,target=/punch_linker_light/output \
+  dimeng851/punch_linker_light:v1
   ```
 * Find the results in **OUTPUT** folder.
 

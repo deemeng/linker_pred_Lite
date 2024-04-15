@@ -1,9 +1,9 @@
-<h1 align="center">PUNCH_Linker_Light</h1>
+<h1 align="center">LINKER-Pred_Lite</h1>
 <p align="center"><i>A high-speed Disordered Flexible Linker (DFL) ppredictor trained on DLD domain Linker dataset and <a href="https://disprot.org/">Disprot</a> Database.</i></p>
 
 ## 📝 Description
-PUNCH_Linker_loght project belongs to a serious of PUNCH projects which focus on the Structure and Function prediction of Intrisically Diordered Protein/Region (IDP/IDR).
-Currently we have <a href="https://disprot.org/">PUNCH2</a> for IDR structure prediction and <a href="https://github.com/deemeng/punch_linker">PUNCH_Linker</a> for DFL prediction.
+LINKER-Pred_Lite project belongs to a serious of PUNCH projects which focus on the Structure and Function prediction of Intrisically Diordered Protein/Region (IDP/IDR).
+Currently we have <a href="https://disprot.org/">PUNCH2</a> for IDR structure prediction and <a href="https://github.com/deemeng/linker_pred">LINKER-Pred</a> for DFL prediction.
 PUNCH_Linker_light is trained on more than 2000 DFL linker dataset from <a href="https://disprot.org/">DLD</a> dataset and <a href="https://disprot.org/">Disprot</a>, its performance is better than TOP predictors on the CAID2 Linker dataset. 
 There is no MSA seqrching needed for the prediction. Therefore, compare to PUNCH_Linker, the prediction may slightly worse but it only cost ~0.1 second for one prediction.
 
@@ -69,4 +69,4 @@ di.meng@ucdconnect.ie
 📬 Gianluca Pollastri - gianluca.pollastri@ucd.ie 
 
 ## Project
->https://github.com/deemeng/punch_linker_light
+>https://github.com/deemeng/linker_pred_lite
